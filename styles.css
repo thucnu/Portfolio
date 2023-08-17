@@ -143,7 +143,7 @@ section > h1{
     margin-bottom: 0.5rem;
 }
 
-section:nth-child(even){
+section:nth-child(odd){
     background: var(--color-gray-200);
 }
 
@@ -555,6 +555,18 @@ header{
     color: hsl(var(--primary-hue), 5%, 70%);
     padding: 1.5rem 0;
     border-top: 2px solid hsl(var(--primary-hue), 5%, 25%);
+}
+@media (max-width: 1024px){
+    .portfolio{
+        position: static;
+    }
+    
+    .portfolio__content{
+        position: static;
+        display: grid;
+        gap: 1rem;
+        padding: 1rem 0.5rem;
+    }
 }
 @media (max-width: 768px) {
     h1{
