@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome  -->
+    <!-- <script -->
+      src="https://kit.fontawesome.com/1d637ce4ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Outfit:wght@600;700;800;900&family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main.scss -->
+    <link type="text/css" rel="stylesheet" href="./styles.css" />
+
+    <link rel="icon" href="./img/logo_tnu.png" type="image/png" />
+
+    <!-- animation on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- inconscout -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <title>TNU</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container nav__container">
+        <a href="index.html" class="nav__logo">
+          <img src="./img/logo_tnu.png" alt="logo" />
+        </a>
+        <ul class="nav__menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav__buttons">
+          <button class="nav__theme-btn"><i class="uil uil-moon"></i></button>
+          <button class="nav__toggle-open"><i class="uil uil-bars"></i></button>
+          <button class="nav__toggle-close">
+            <i class="uil uil-multiply"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="container header__container">
+        <article class="header__image" data-aos="fade-up" data-aos-delay="700">
+          <div><img src="./img/avt.png" alt="" /></div>
+        </article>
+        <article class="header__content" data-aos="fade-in">
+          <h4>Hi, I'm <strong>Thuc Nu</strong>. And I'm</h4>
+          <h1>Software Developer</h1>
+          <p>
+            I always keep up-to-date with the latest technologies and am
+            passionate about learning and applying them to bring value to
+            customers and users.
+          </p>
+          <div class="header__cta">
+            <a href="#contact" class="btn primary">Hire me</a>
+            <a href="#portfolio" class="btn">Portfolio</a>
+          </div>
+        </article>
+        <ul class="header__socials">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/dong-bich-thuc-nu-b63664215/"
+              target="_blank"
+              ><i class="uil uil-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/thucnu" target="_blank"
+              ><i class="uil uil-github"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/embeserri_/?fbclid=IwAR1krH6LujHAJd-N-u248nWvFT6iQur3i-z2-Dv5WXdf2l73i797-fTYTjQ"
+              target="_blank"
+              ><i class="uil uil-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/thucnu0608/" target="_blank"
+              ><i class="uil uil-facebook"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="about" id="about">
+      <div class="container about__container">
+        <div class="about__image">
+          <img src="./img/avt.png" />
+        </div>
+        <div class="about__detail" data-aos="fade-in" data-aos-delay="300">
+          <h1>About me</h1>
+          <div class="about__cards">
+            <article class="about__card">
+              <i class="uil uil-award-alt"></i>
+              <h4>Experience</h4>
+              <small>3 months</small>
+            </article>
+            <article class="about__card">
+              <i class="uil uil-university"></i>
+              <h4>Education</h4>
+              <small>GPA: 3.34/4.0</small>
+            </article>
+          </div>
+          <p>
+            Certificate of <strong>Excellent Student</strong> for academic years
+            2020-2021 and 2021-2022.<br />
+            Scholarship for <strong>good students</strong> in the second
+            semester of academic year 2019-2020,
+            <strong>excellent students</strong> of academic year 2020 - 2021,
+            and academic year 2021-2022.
+          </p>
+          <p>
+            Academic exchange at the Research and Development Faculty,
+            <strong>Royal University of Phnom Penh (RUPP)</strong>, Cambodia in
+            2022.
+          </p>
+          <p>
+            Participated in the
+            <strong>NFQ company's fresher academy training program</strong>,
+            engaged in internal projects, and took part in learning activities
+            focused on soft skills with experts.
+          </p>
+          <a
+            href="./img/CV_DongBichThucNu.pdf"
+            class="btn primary"
+            download
+            target="_blank"
+            ><i class="uil uil-download-alt"></i> Download CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolios" id="portfolio">
+      <h1>Portfolio</h1>
+      <div class="container portfolios__container">
+        <ul class="portfolios__left">
+          <li class="portfolios__item active">
+            <a href="#doctor">
+              <span><i class="uil uil-user-md"></i></span>
+              <div>
+                <h3>Doctor Care</h3>
+                <p>Jan 2022</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolios__item">
+            <a href="#blog">
+              <span><i class="uil uil-document-layout-left"></i></span>
+              <div>
+                <h3>Blog App</h3>
+                <p>Aug 2023</p>
+              </div>
+            </a>
+          </li>
+          <li class="portfolios__item">
+            <a href="#nfq">
+              <span><i class="uil uil-building"></i></span>
+              <div>
+                <h3>NFQ Contribute</h3>
+                <p>Feb 2023</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <article
+          class="portfolios__right"
+          data-aos="fade-in"
+          data-aos-delay="300"
+        >
+          <div class="portfolio" id="doctor">
+            <div class="portfolios__img">
+              <img src="./img/doctor-care.png" alt="" />
+            </div>
+            <div class="portfolio__content">
+              <h4 class="portfolio__title">DOCTOR CARE PROJECT</h4>
+              <div class="portfolio__time">FROM JAN, 2022</div>
+              <i class="portfolio__desc">
+                " A website that supports users to schedule medical appointments
+                online without the need to physically go to the clinic and wait
+                for a queue number "<br />
+              </i>
+              <button class="btn m">
+                <a target="_blank" href="https://github.com/thucnu/Doctor_Care"
+                  >Github</a
+                >
+              </button>
+            </div>
+          </div>
+          <div style="display: none" class="portfolio" id="blog">
+            <div class="portfolios__img">
+              <img src="./img/blog-app.png" alt="" />
+            </div>
+            <div class="portfolio__content">
+              <h4 class="portfolio__title">BLOG APP PROJECT</h4>
+              <div class="portfolio__time">FROM AUG, 2023</div>
+              <i class="portfolio__desc">
+                " This is a personal project, I'm working on it with the purpose
+                of delving deeper into ReactJS. The project includes
+                functionalities for adding, editing, and deleting a post. "<br />
+              </i>
+              <button class="btn m">
+                <a target="_blank" href="https://github.com/thucnu/BlogApp"
+                  >Github</a
+                >
+              </button>
+            </div>
+          </div>
+          <div style="display: none" class="portfolio" id="nfq">
+            <div class="portfolio__nfq__content">
+              <h4 class="portfolio__title">NFQ CONTRIBUTE</h4>
+              <div class="portfolio__nfq__time">FROM FEB, 2023</div>
+              <i class="portfolio__nfq__desc">
+                " It is an internal project and it has been designed from the
+                ground up to make career progression and personal growth fun and
+                engaging through gamifi cation and tangible rewards. It is built
+                to enhance or even replace the usual cycle of performance
+                reviews. "<br />
+              </i>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <h1 class="title">Skills</h1>
+      <div class="skill container" data-aos="zoom-in">
+        <div class="skill__item">
+          <img
+            width="48"
+            height="48"
+            src="https://img.icons8.com/color/48/javascript--v1.png"
+            alt="javascript--v1"
+          />
+          <p>Javascript</p>
+        </div>
+        <div class="skill__item">
+          <img
+            width="48"
+            height="48"
+            src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/48/external-react-social-media-tanah-basah-glyph-tanah-basah.png"
+            alt="external-react-social-media-tanah-basah-glyph-tanah-basah"
+          />
+          <p>ReactJS</p>
+        </div>
+        <div class="skill__item">
+          <img
+            width="48"
+            height="48"
+            src="https://img.icons8.com/color/48/typescript.png"
+            alt="typescript"
+          />
+          <p>TypeScript</p>
+        </div>
+        <div class="skill__item">
+          <img
+            width="48"
+            height="48"
+            src="https://img.icons8.com/color/48/tailwindcss.png"
+            alt="tailwindcss"
+          />
+          <p>TailwindCSS</p>
+        </div>
+        <div class="skill__item">
+          <img
+            width="48"
+            height="48"
+            src="https://img.icons8.com/color/48/bootstrap.png"
+            alt="bootstrap"
+          />
+          <p>Bootstrap</p>
+        </div>
+        <div class="skill__item">
+          <img
+            width="64"
+            height="64"
+            src="https://img.icons8.com/sf-black-filled/64/github.png"
+            alt="github"
+          />
+          <p>Github</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container contact__container">
+        <div class="contact__mess">
+          <h2>Drop me a message</h2>
+          <p>"Please contact me if you need, I'm always ready to respond."</p>
+        </div>
+        <div class="contact__top">
+          <div class="contact__position">
+            <p data-aos="fade-down" data-aos-delay="300" class="contact__info">
+              <i class="uil uil-phone"></i>
+              <span>0845848284</span>
+            </p>
+            <p data-aos="fade-down" data-aos-delay="400" class="contact__info">
+              <i class="uil uil-envelope-minus"></i>
+              <span>thucnu0608@gmail.com</span>
+            </p>
+            <p data-aos="fade-down" data-aos-delay="500" class="contact__info">
+              <i class="uil uil-map"></i>
+              <span>Ninh Kieu, Can Tho</span>
+            </p>
+          </div>
+          <form
+            action="https://formsubmit.co/thucnu0608@gmail.com"
+            method="POST"
+            class="contact__form"
+            data-aos="fade-left"
+            data-aos-delay="500"
+          >
+            <input
+              type="text"
+              name="name"
+              class="contact__input"
+              placeholder="Your name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              class="contact__input"
+              placeholder="Your email address"
+              required
+            />
+            <textarea
+              cols="0"
+              rows="5"
+              name="message"
+              class="contact__textarea"
+              placeholder="Your message"
+              required
+            ></textarea>
+            <button class="contact__btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer__container">
+        <ul class="footer__menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="footer__socials">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/dong-bich-thuc-nu-b63664215/"
+              target="_blank"
+              ><i class="uil uil-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/thucnu" target="_blank"
+              ><i class="uil uil-github"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/embeserri_/?fbclid=IwAR1krH6LujHAJd-N-u248nWvFT6iQur3i-z2-Dv5WXdf2l73i797-fTYTjQ"
+              target="_blank"
+              ><i class="uil uil-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/thucnu0608/" target="_blank"
+              ><i class="uil uil-facebook"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <small>© 2023 Thuc Nu. All rights reserved.</small>
+      </div>
+    </footer>
+  </body>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 80,
+      duration: 1500,
+    });
+  </script>
+
+  <script type="" src="./index.js"></script>
+</html>
